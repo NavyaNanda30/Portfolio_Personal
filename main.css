@@ -833,7 +833,162 @@ html {
     border-top: 1px solid #eee;
     margin-top: 40px;
   }
-  
+
+/* ================================
+   EXPERIENCE SECTION
+================================ */
+
+.experience {
+    padding: 90px 0;
+    background: #ffffff;
+}
+
+.experience-card {
+    position: relative;
+    display: flex;
+    gap: 35px;
+    max-width: 1000px;
+    margin: 50px auto 0;
+    padding: 40px;
+    background: #ffffff;
+    border-radius: 25px;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease;
+}
+
+.experience-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.12);
+}
+
+.experience-animal {
+    font-size: 65px;
+    min-width: 90px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f5f8ff;
+    border-radius: 50%;
+    animation: animalFloat 3s ease-in-out infinite;
+}
+
+@keyframes animalFloat {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-8px);
+    }
+}
+
+.experience-content {
+    flex: 1;
+}
+
+.experience-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.experience-header h3 {
+    margin: 0;
+    font-size: 28px;
+}
+
+.experience-header h4 {
+    margin: 7px 0 0;
+    font-size: 19px;
+    color: #666;
+}
+
+.experience-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    text-align: right;
+    color: #666;
+    font-size: 14px;
+}
+
+.experience-project {
+    margin: 25px 0 20px;
+}
+
+.experience-tag {
+    display: inline-block;
+    padding: 8px 15px;
+    border-radius: 20px;
+    background: #eef4ff;
+    color: #2f80ed;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.experience-points {
+    padding-left: 20px;
+    margin: 0;
+}
+
+.experience-points li {
+    margin-bottom: 12px;
+    line-height: 1.7;
+    color: #555;
+}
+
+.experience-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 25px;
+}
+
+.experience-tech span {
+    padding: 7px 13px;
+    border-radius: 15px;
+    background: #f3f3f3;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+
+    .experience {
+        padding: 70px 20px;
+    }
+
+    .experience-card {
+        flex-direction: column;
+        padding: 25px;
+        gap: 20px;
+    }
+
+    .experience-animal {
+        width: 75px;
+        min-width: 75px;
+        height: 75px;
+        font-size: 50px;
+    }
+
+    .experience-header {
+        flex-direction: column;
+    }
+
+    .experience-meta {
+        text-align: left;
+    }
+
+    .experience-header h3 {
+        font-size: 24px;
+    }
+}
+
+
+
   .skills {
     padding: 3rem 0;
     position: relative;
