@@ -22,6 +22,7 @@ html {
 /* Section container */
 .projects {
   padding: 80px 0;
+
 }
 
 /* Project cards */
@@ -37,13 +38,15 @@ html {
   background-color: #fff;
 }
 
-/* Card hover effect */
+/* NEWWWWW
+
+/* Card hover effect 
 .project:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-/* Project info and image */
+/* Project info and image 
 .project-info {
   flex: 1;
   padding-right: 20px;
@@ -55,7 +58,7 @@ html {
   border-radius: 6px;
 }
 
-/* Title and description */
+/* Title and description 
 .project h3 {
   font-size: 24px;
   margin-bottom: 10px;
@@ -68,7 +71,7 @@ html {
   color: #666;
 }
 
-/* Links/buttons */
+/* Links/buttons 
 .project-links {
   margin-top: 20px;
 }
@@ -88,7 +91,7 @@ html {
   background-color: #0056b3;
 }
 
-/* Responsive styles */
+/* Responsive styles 
 @media (max-width: 768px) {
   .project {
     flex-direction: column;
@@ -99,6 +102,115 @@ html {
     margin-bottom: 20px;
   }
 }
+*/
+
+
+
+/* ================================
+   COMPACT PROJECT CARDS
+================================ */
+
+.project {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 35px;
+    margin-bottom: 60px;
+}
+
+.project-info {
+    flex: 1;
+    max-width: 600px;
+}
+
+.project-info h3 {
+    margin-bottom: 12px;
+    font-size: 25px;
+}
+
+.project-description {
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Project Image */
+.project-image {
+    width: 380px;
+    min-width: 380px;
+    height: 240px;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Technology Stack */
+.tech-stack-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.tech-stack-list li {
+    list-style: none;
+}
+
+/* Project Buttons */
+.project-links {
+    margin-top: 15px;
+}
+
+
+/* ================================
+   MOBILE RESPONSIVE
+================================ */
+
+@media (max-width: 768px) {
+
+    .project {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .project-info {
+        max-width: 100%;
+    }
+
+    .project-image {
+        width: 100%;
+        min-width: 100%;
+        height: 220px;
+    }
+
+    .project-info h3 {
+        font-size: 22px;
+    }
+
+    .project-description {
+        font-size: 14px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   
   a {
