@@ -27,6 +27,17 @@ html {
 .resume {
     padding: 80px 0;
     background: #ffffff;
+    color: #111111;
+}
+
+/* Resume heading */
+.resume .section-title {
+    color: #111111;
+}
+
+/* Resume project/card */
+.resume-project {
+    background: #ffffff;
 }
 
 .resume-project {
