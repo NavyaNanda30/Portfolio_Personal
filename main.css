@@ -1021,6 +1021,382 @@ html {
       min-height: 350px;
     }
   }
+
+
+/* =================================
+   EDUCATION - MODERN TIMELINE
+================================= */
+
+.education {
+    padding: 90px 0;
+    background: #ffffff;
+}
+
+.education-title {
+    margin-bottom: 55px;
+}
+
+
+/* Timeline */
+
+.education-timeline {
+    position: relative;
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+
+/* Vertical Line */
+
+.education-timeline::before {
+    content: "";
+    position: absolute;
+
+    left: 105px;
+    top: 10px;
+    bottom: 10px;
+
+    width: 2px;
+
+    background: #dce8fb;
+}
+
+
+/* Timeline Item */
+
+.education-item {
+    position: relative;
+
+    display: grid;
+
+    grid-template-columns: 80px 50px 1fr;
+
+    align-items: center;
+
+    margin-bottom: 35px;
+}
+
+
+/* Year */
+
+.education-year {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.education-year span {
+    font-size: 15px;
+    font-weight: 700;
+
+    color: #2f80ed;
+
+    padding: 8px 12px;
+
+    background: #eef5ff;
+
+    border-radius: 10px;
+}
+
+
+/* Timeline Dot */
+
+.education-dot {
+    position: relative;
+
+    width: 16px;
+    height: 16px;
+
+    margin: auto;
+
+    background: #2f80ed;
+
+    border: 4px solid #ffffff;
+
+    border-radius: 50%;
+
+    box-shadow:
+        0 0 0 3px #dce8fb;
+
+    z-index: 2;
+}
+
+
+/* Card */
+
+.education-card {
+    position: relative;
+
+    padding: 27px 30px;
+
+    background: #ffffff;
+
+    border: 1px solid #e8edf5;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.06);
+
+    transition: all 0.3s ease;
+}
+
+
+/* Card Hover */
+
+.education-card:hover {
+    transform: translateX(7px);
+
+    border-color: rgba(47, 128, 237, 0.3);
+
+    box-shadow:
+        0 18px 40px rgba(47, 128, 237, 0.10);
+}
+
+
+/* Card Top */
+
+.education-card-top {
+    display: flex;
+
+    align-items: center;
+
+    gap: 16px;
+
+    margin-bottom: 18px;
+}
+
+
+/* Education Icon */
+
+.education-icon {
+    width: 50px;
+    height: 50px;
+
+    min-width: 50px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 14px;
+
+    background: #eef5ff;
+
+    color: #2f80ed;
+
+    font-size: 21px;
+
+    transition: all 0.3s ease;
+}
+
+
+.education-card:hover .education-icon {
+    transform: rotate(-5deg) scale(1.05);
+}
+
+
+/* Level */
+
+.education-level {
+    display: block;
+
+    margin-bottom: 4px;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+
+    text-transform: uppercase;
+
+    color: #2f80ed;
+}
+
+
+/* Heading */
+
+.education-card h3 {
+    margin: 0;
+
+    font-size: 20px;
+
+    font-weight: 700;
+
+    color: #222;
+}
+
+
+/* Institution */
+
+.education-card h4 {
+    margin: 0 0 8px;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    color: #444;
+}
+
+
+/* Location */
+
+.education-location {
+    margin: 0;
+
+    font-size: 13px;
+
+    color: #777;
+}
+
+
+.education-location i {
+    margin-right: 6px;
+
+    color: #2f80ed;
+}
+
+
+/* Footer */
+
+.education-footer {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-top: 20px;
+
+    padding-top: 15px;
+
+    border-top: 1px solid #edf0f5;
+}
+
+
+/* Score */
+
+.education-score {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 6px;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    color: #333;
+}
+
+
+.education-score i {
+    color: #f5b942;
+}
+
+
+/* Tag */
+
+.education-tag {
+    padding: 6px 11px;
+
+    background: #f5f8fc;
+
+    color: #667085;
+
+    border-radius: 20px;
+
+    font-size: 11px;
+
+    font-weight: 600;
+}
+
+
+/* =================================
+   MOBILE
+================================= */
+
+@media (max-width: 768px) {
+
+    .education {
+        padding: 70px 20px;
+    }
+
+    .education-title {
+        margin-bottom: 40px;
+    }
+
+    .education-timeline::before {
+        left: 23px;
+    }
+
+    .education-item {
+        grid-template-columns: 45px 1fr;
+
+        gap: 15px;
+
+        align-items: start;
+    }
+
+    .education-year {
+        grid-column: 1;
+
+        grid-row: 1;
+
+        justify-content: flex-start;
+    }
+
+    .education-year span {
+        font-size: 11px;
+
+        padding: 6px 7px;
+    }
+
+    .education-dot {
+        position: absolute;
+
+        left: 16px;
+        top: 42px;
+
+        width: 14px;
+        height: 14px;
+    }
+
+    .education-card {
+        grid-column: 2;
+
+        grid-row: 1;
+
+        padding: 22px 20px;
+    }
+
+    .education-card:hover {
+        transform: translateY(-4px);
+    }
+
+    .education-card h3 {
+        font-size: 17px;
+    }
+
+    .education-card h4 {
+        font-size: 14px;
+    }
+
+    .education-footer {
+        align-items: flex-start;
+
+        gap: 10px;
+
+        flex-direction: column;
+    }
+
+}
+
+/*
   .education {
     background: white;
     padding-bottom: 3rem;
@@ -1077,6 +1453,8 @@ html {
     margin-top: 40px;
   }
 
+
+*/
 /* ================================
    EXPERIENCE SECTION
 ================================ */
